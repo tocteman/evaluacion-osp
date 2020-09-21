@@ -1,13 +1,12 @@
-import React, {useEffect, FunctionComponent} from 'react'
+import React, {useEffect, FunctionComponent} from "react"
 import {
-  Switch,
+  // Switch,
   Route,
-  useLocation,
+  // useLocation,
   useHistory,
-  Redirect,
 } from "react-router-dom";
-import loadable from '@loadable/component'
-import Sidebar from '../components/sidebar'
+import loadable from "@loadable/component"
+import Sidebar from "../components/sidebar"
 
 const LazyPeliculas = loadable(() => import(`./Peliculas`), {
   fallback: <div>loading...</div>
@@ -21,13 +20,13 @@ type PageContainerProps = {
 }
 
 const PageContainer: FunctionComponent<PageContainerProps> = ({gotrue}) => {
-  const location = useLocation()
+  // const location = useLocation()
   const history = useHistory()  
-  const user = typeof window !== 'undefined' && gotrue.currentUser();
+  const user = typeof window !== "undefined" && gotrue.currentUser();
 
   useEffect(() => {
     if (!user){
-      history.push('/login')
+      history.push("/login")
     } 
   }, [user, history])
 

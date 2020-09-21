@@ -3,17 +3,20 @@ module.exports = {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
-  purge: [],
+  purge: {enabled: true, content: [
+    'src/**/*.ts',
+    'src/**/*.tsx',
+  ]},
   theme: {
     fontFamily: {
-      'sans': ['ff-dagny-web-pro', 'sans-serif'],
-      'display': ['ff-dagny-web-pro', 'sans-serif'],
-      'body': ['ff-dagny-web-pro', 'sans-serif']
+      "sans": ["ff-dagny-web-pro", "sans-serif"],
+      "display": ["ff-dagny-web-pro", "sans-serif"],
+      "body": ["ff-dagny-web-pro", "sans-serif"]
     },
     extend: {},
   },
   variants: {
-    fontWeight: ['responsive', 'hover', 'focus', 'active', 'group-hover']
+    fontWeight: ["responsive", "hover", "focus", "active", "group-hover"]
   },
   plugins: [],
 }

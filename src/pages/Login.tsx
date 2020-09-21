@@ -1,5 +1,5 @@
-import React, { FunctionComponent } from 'react'
-import {LoginProps} from '../types'
+import React, { FunctionComponent } from "react"
+import {LoginProps} from "../types"
 
 const Login:FunctionComponent<LoginProps> = ({gotrue}) => {
   return (
