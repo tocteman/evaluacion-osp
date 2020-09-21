@@ -1,6 +1,10 @@
+
+
 @import "tailwindcss/base";
 
 @import "tailwindcss/components";
+
+@import url("https://use.typekit.net/mvx5czn.css");
 
 @import "tailwindcss/utilities";
 

@@ -5,6 +5,11 @@ module.exports = {
   },
   purge: [],
   theme: {
+    fontFamily: {
+      'sans': ['ff-dagny-web-pro', 'sans-serif'],
+      'display': ['ff-dagny-web-pro', 'sans-serif'],
+      'body': ['ff-dagny-web-pro', 'sans-serif']
+    },
     extend: {},
   },
   variants: {},

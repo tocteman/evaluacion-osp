@@ -1,17 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import '../src/assets/css/styles.css';
+import useSWR from 'swr'
+import Sidebar from "./components/sidebar";
+import PageContainer from './pages/pageContainer'
+import {BrowserRouter as Router } from "react-router-dom"
+ 
+const fetcher = (url: string) => fetch(url).then(res =>{ 
+  return res.json()
+})
+const App = () =>  {
 
-function App() {
+  const {data, error} = useSWR('.netlify/functions/hello-world', fetcher)
+
+  if (error) return <div>There's been a problem</div>
+  if (!data) return <div>Loading...</div>
   return (
-    <div className="App min-h-screen flex">
-      <div className="w-1/4">
-      
+    <Router>
+    <div className="min-h-screen flex font-sans">
+      <div className="w-1/5 flex flex-col min-h-screen bg-gray-200 font-sans">
+        <Sidebar/>
       </div>
-      <div className="w-3/4">
-
+      <div className="w-4/5">
+        <PageContainer/>
       </div>
     </div>
+    </Router>
   );
 }
 
