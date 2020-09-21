@@ -10307,6 +10307,78 @@ video {
   font-weight: 900;
 }
 
+.active\:font-hairline:active {
+  font-weight: 100;
+}
+
+.active\:font-thin:active {
+  font-weight: 200;
+}
+
+.active\:font-light:active {
+  font-weight: 300;
+}
+
+.active\:font-normal:active {
+  font-weight: 400;
+}
+
+.active\:font-medium:active {
+  font-weight: 500;
+}
+
+.active\:font-semibold:active {
+  font-weight: 600;
+}
+
+.active\:font-bold:active {
+  font-weight: 700;
+}
+
+.active\:font-extrabold:active {
+  font-weight: 800;
+}
+
+.active\:font-black:active {
+  font-weight: 900;
+}
+
+.group:hover .group-hover\:font-hairline {
+  font-weight: 100;
+}
+
+.group:hover .group-hover\:font-thin {
+  font-weight: 200;
+}
+
+.group:hover .group-hover\:font-light {
+  font-weight: 300;
+}
+
+.group:hover .group-hover\:font-normal {
+  font-weight: 400;
+}
+
+.group:hover .group-hover\:font-medium {
+  font-weight: 500;
+}
+
+.group:hover .group-hover\:font-semibold {
+  font-weight: 600;
+}
+
+.group:hover .group-hover\:font-bold {
+  font-weight: 700;
+}
+
+.group:hover .group-hover\:font-extrabold {
+  font-weight: 800;
+}
+
+.group:hover .group-hover\:font-black {
+  font-weight: 900;
+}
+
 .h-0 {
   height: 0;
 }
@@ -32098,6 +32170,78 @@ video {
     font-weight: 900;
   }
 
+  .sm\:active\:font-hairline:active {
+    font-weight: 100;
+  }
+
+  .sm\:active\:font-thin:active {
+    font-weight: 200;
+  }
+
+  .sm\:active\:font-light:active {
+    font-weight: 300;
+  }
+
+  .sm\:active\:font-normal:active {
+    font-weight: 400;
+  }
+
+  .sm\:active\:font-medium:active {
+    font-weight: 500;
+  }
+
+  .sm\:active\:font-semibold:active {
+    font-weight: 600;
+  }
+
+  .sm\:active\:font-bold:active {
+    font-weight: 700;
+  }
+
+  .sm\:active\:font-extrabold:active {
+    font-weight: 800;
+  }
+
+  .sm\:active\:font-black:active {
+    font-weight: 900;
+  }
+
+  .group:hover .sm\:group-hover\:font-hairline {
+    font-weight: 100;
+  }
+
+  .group:hover .sm\:group-hover\:font-thin {
+    font-weight: 200;
+  }
+
+  .group:hover .sm\:group-hover\:font-light {
+    font-weight: 300;
+  }
+
+  .group:hover .sm\:group-hover\:font-normal {
+    font-weight: 400;
+  }
+
+  .group:hover .sm\:group-hover\:font-medium {
+    font-weight: 500;
+  }
+
+  .group:hover .sm\:group-hover\:font-semibold {
+    font-weight: 600;
+  }
+
+  .group:hover .sm\:group-hover\:font-bold {
+    font-weight: 700;
+  }
+
+  .group:hover .sm\:group-hover\:font-extrabold {
+    font-weight: 800;
+  }
+
+  .group:hover .sm\:group-hover\:font-black {
+    font-weight: 900;
+  }
+
   .sm\:h-0 {
     height: 0;
   }
@@ -53821,6 +53965,78 @@ video {
   }
 
   .md\:focus\:font-black:focus {
+    font-weight: 900;
+  }
+
+  .md\:active\:font-hairline:active {
+    font-weight: 100;
+  }
+
+  .md\:active\:font-thin:active {
+    font-weight: 200;
+  }
+
+  .md\:active\:font-light:active {
+    font-weight: 300;
+  }
+
+  .md\:active\:font-normal:active {
+    font-weight: 400;
+  }
+
+  .md\:active\:font-medium:active {
+    font-weight: 500;
+  }
+
+  .md\:active\:font-semibold:active {
+    font-weight: 600;
+  }
+
+  .md\:active\:font-bold:active {
+    font-weight: 700;
+  }
+
+  .md\:active\:font-extrabold:active {
+    font-weight: 800;
+  }
+
+  .md\:active\:font-black:active {
+    font-weight: 900;
+  }
+
+  .group:hover .md\:group-hover\:font-hairline {
+    font-weight: 100;
+  }
+
+  .group:hover .md\:group-hover\:font-thin {
+    font-weight: 200;
+  }
+
+  .group:hover .md\:group-hover\:font-light {
+    font-weight: 300;
+  }
+
+  .group:hover .md\:group-hover\:font-normal {
+    font-weight: 400;
+  }
+
+  .group:hover .md\:group-hover\:font-medium {
+    font-weight: 500;
+  }
+
+  .group:hover .md\:group-hover\:font-semibold {
+    font-weight: 600;
+  }
+
+  .group:hover .md\:group-hover\:font-bold {
+    font-weight: 700;
+  }
+
+  .group:hover .md\:group-hover\:font-extrabold {
+    font-weight: 800;
+  }
+
+  .group:hover .md\:group-hover\:font-black {
     font-weight: 900;
   }
 
@@ -75550,6 +75766,78 @@ video {
     font-weight: 900;
   }
 
+  .lg\:active\:font-hairline:active {
+    font-weight: 100;
+  }
+
+  .lg\:active\:font-thin:active {
+    font-weight: 200;
+  }
+
+  .lg\:active\:font-light:active {
+    font-weight: 300;
+  }
+
+  .lg\:active\:font-normal:active {
+    font-weight: 400;
+  }
+
+  .lg\:active\:font-medium:active {
+    font-weight: 500;
+  }
+
+  .lg\:active\:font-semibold:active {
+    font-weight: 600;
+  }
+
+  .lg\:active\:font-bold:active {
+    font-weight: 700;
+  }
+
+  .lg\:active\:font-extrabold:active {
+    font-weight: 800;
+  }
+
+  .lg\:active\:font-black:active {
+    font-weight: 900;
+  }
+
+  .group:hover .lg\:group-hover\:font-hairline {
+    font-weight: 100;
+  }
+
+  .group:hover .lg\:group-hover\:font-thin {
+    font-weight: 200;
+  }
+
+  .group:hover .lg\:group-hover\:font-light {
+    font-weight: 300;
+  }
+
+  .group:hover .lg\:group-hover\:font-normal {
+    font-weight: 400;
+  }
+
+  .group:hover .lg\:group-hover\:font-medium {
+    font-weight: 500;
+  }
+
+  .group:hover .lg\:group-hover\:font-semibold {
+    font-weight: 600;
+  }
+
+  .group:hover .lg\:group-hover\:font-bold {
+    font-weight: 700;
+  }
+
+  .group:hover .lg\:group-hover\:font-extrabold {
+    font-weight: 800;
+  }
+
+  .group:hover .lg\:group-hover\:font-black {
+    font-weight: 900;
+  }
+
   .lg\:h-0 {
     height: 0;
   }
@@ -97273,6 +97561,78 @@ video {
   }
 
   .xl\:focus\:font-black:focus {
+    font-weight: 900;
+  }
+
+  .xl\:active\:font-hairline:active {
+    font-weight: 100;
+  }
+
+  .xl\:active\:font-thin:active {
+    font-weight: 200;
+  }
+
+  .xl\:active\:font-light:active {
+    font-weight: 300;
+  }
+
+  .xl\:active\:font-normal:active {
+    font-weight: 400;
+  }
+
+  .xl\:active\:font-medium:active {
+    font-weight: 500;
+  }
+
+  .xl\:active\:font-semibold:active {
+    font-weight: 600;
+  }
+
+  .xl\:active\:font-bold:active {
+    font-weight: 700;
+  }
+
+  .xl\:active\:font-extrabold:active {
+    font-weight: 800;
+  }
+
+  .xl\:active\:font-black:active {
+    font-weight: 900;
+  }
+
+  .group:hover .xl\:group-hover\:font-hairline {
+    font-weight: 100;
+  }
+
+  .group:hover .xl\:group-hover\:font-thin {
+    font-weight: 200;
+  }
+
+  .group:hover .xl\:group-hover\:font-light {
+    font-weight: 300;
+  }
+
+  .group:hover .xl\:group-hover\:font-normal {
+    font-weight: 400;
+  }
+
+  .group:hover .xl\:group-hover\:font-medium {
+    font-weight: 500;
+  }
+
+  .group:hover .xl\:group-hover\:font-semibold {
+    font-weight: 600;
+  }
+
+  .group:hover .xl\:group-hover\:font-bold {
+    font-weight: 700;
+  }
+
+  .group:hover .xl\:group-hover\:font-extrabold {
+    font-weight: 800;
+  }
+
+  .group:hover .xl\:group-hover\:font-black {
     font-weight: 900;
   }
 

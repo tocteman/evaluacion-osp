@@ -1,28 +1,54 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../src/assets/css/styles.css';
 import useSWR from 'swr'
 import Sidebar from "./components/sidebar";
 import PageContainer from './pages/pageContainer'
-import {BrowserRouter as Router } from "react-router-dom"
+import {BrowserRouter as Router, useHistory, Route, Switch } from "react-router-dom"
+import GoTrue from 'gotrue-js'
+import loadable from '@loadable/component'
  
-const fetcher = (url: string) => fetch(url).then(res =>{ 
-  return res.json()
-})
+// const fetcher = (url: string) => fetch(url).then(res =>{ 
+//   return res.json()
+// })
+
 const App = () =>  {
+  const history = useHistory()
+  const auth = new GoTrue({
+    APIUrl: 'https://<your domain name>/.netlify/identity',
+    audience: '',
+    setCookie: false,
+  });
 
-  const {data, error} = useSWR('.netlify/functions/hello-world', fetcher)
+  // const {data, error} = useSWR('.netlify/functions/hello-world', fetcher)
+  
 
-  if (error) return <div>There's been a problem</div>
-  if (!data) return <div>Loading...</div>
+  // if (error) return <div>There's been a problem</div>
+  // if (!data) return <div>Loading...</div>
+
+  
+
+
+
+  const LazyPage = loadable(() => import(`./pages/pageContainer`), {
+    fallback: <div>loading...</div>
+  })
+  const LazyLogin = loadable(() => import(`./pages/LoginLobby`), {
+    fallback: <div>loading...</div>
+  })
+
   return (
     <Router>
     <div className="min-h-screen flex font-sans">
-      <div className="w-1/5 flex flex-col min-h-screen bg-gray-200 font-sans">
-        <Sidebar/>
-      </div>
-      <div className="w-4/5">
-        <PageContainer/>
-      </div>
+      <Switch>
+        <Route path="/login">
+          <LazyLogin gotrue={auth}/>
+        </Route>
+        <Route path="/">
+          <LazyPage gotrue={auth}/>
+        </Route>
+      </Switch>
+
+
     </div>
     </Router>
   );

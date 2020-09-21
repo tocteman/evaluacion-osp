@@ -13,7 +13,9 @@
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "@types/react-router-dom": "^5.1.5",
+    "@types/yup": "^0.29.7",
     "autoprefixer": "^10.0.0",
+    "formik": "^2.1.5",
     "gotrue-js": "^0.9.27",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -21,7 +23,8 @@
     "react-scripts": "3.4.3",
     "swr": "^0.3.3",
     "tailwindcss": "^1.8.10",
-    "typescript": "~3.7.2"
+    "typescript": "~3.7.2",
+    "yup": "^0.29.3"
   },
   "scripts": {
     "watch:css": "npx tailwindcss build src/assets/css/tailwind.css -o src/assets/css/styles.css",

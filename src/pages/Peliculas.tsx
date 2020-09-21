@@ -2,8 +2,8 @@ import React from 'react'
 
 const Peliculas = () => {
   return (
-    <div>
-      películas
+    <div className="font-bold text-5xl p-16">
+      Películas
 
     </div>
   )

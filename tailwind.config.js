@@ -12,6 +12,8 @@ module.exports = {
     },
     extend: {},
   },
-  variants: {},
+  variants: {
+    fontWeight: ['responsive', 'hover', 'focus', 'active', 'group-hover']
+  },
   plugins: [],
 }
