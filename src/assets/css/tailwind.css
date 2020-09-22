@@ -6,5 +6,9 @@
 
 @import url("https://use.typekit.net/mvx5czn.css");
 
+.Toastify__toast--default{
+  background-color: transparent !important;
+} 
+
 @import "tailwindcss/utilities";
 
