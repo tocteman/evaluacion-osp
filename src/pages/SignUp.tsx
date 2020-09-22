@@ -1,7 +1,6 @@
 import React, { FunctionComponent } from "react"
-import {LoginProps} from "../types"
+import {LoginProps, SignUpValues} from "../types"
 // import * as Yup from "yup"
-import {SignUpValues} from "../types"
 import {
   Formik,
   Form,
@@ -29,7 +28,7 @@ const SignUp:FunctionComponent<LoginProps> = ({gotrue}) => {
            actions.setSubmitting(false);
          }}
        >
-         <Form className="flex flex-col text-blue-900 mt-6">
+         <Form className="flex flex-col text-indigo-900 mt-6">
            <label
             htmlFor="name"
             className="mt-2 text-white"
@@ -71,7 +70,7 @@ const SignUp:FunctionComponent<LoginProps> = ({gotrue}) => {
             type="submit"
             className="mt-8 mb-4 rounded-full bg-gray-200 hover:bg-white shadow mx-auto w-48 py-2 font-bold text-lg"
             >
-              Enviar
+              Registrarse
             </button>
          </Form>
        </Formik>

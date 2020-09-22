@@ -8,8 +8,8 @@ import SignUp from "./SignUp"
 const LoginLobby:FunctionComponent<LoginProps> = ({gotrue}) => {
   const [logged, setLogged] = useState("login")
   return (
-      <div className="w-full min-h-screen bg-gray-200 flex justify-center items-center">
-        <div className="p-12 w-1/3 rounded-lg shadow border-2 border-gray-200 bg-blue-800 h-1/3">
+      <div className="w-full min-h-screen bg-white flex justify-center items-center">
+        <div className="p-12 w-1/3 rounded-lg shadow border-2 border-gray-200 bg-indigo-800 h-1/3">
           <div className="flex text-gray-200  justify-center">
             <div className={"px-2 hover:text-white active:font-bold cursor-pointer " + (logged === 'login' ? "font-bold": "font-normal")} onClick={()=> {
               setLogged("login")
