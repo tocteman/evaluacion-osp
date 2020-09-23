@@ -58,8 +58,8 @@ const AddMovieModal:FunctionComponent = (props:any) => {
             publication_date: getUnixTime(parse(values.publication_date, "dd/MM/yyyy", new Date())),
             isActive: values.isActive || false
           }
-          AddNewMovieFetcher('.netlify/functions/getData', movieData).then(()=> {
-            mutate('.netlify/functions/getData')
+          AddNewMovieFetcher('https://evaluacion-osp.netlify.app/.netlify/functions/getData', movieData).then(()=> {
+            mutate('https://evaluacion-osp.netlify.app/.netlify/functions/getData')
             props.toggleFunction()
           })
         }}

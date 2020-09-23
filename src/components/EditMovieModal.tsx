@@ -33,9 +33,9 @@ const EditMovieModal: FunctionComponent<PeliculaEditProps> = (props:any) => {
         publication_date: getUnixTime(parse(values.publication_date, "dd/MM/yyyy", new Date())),
         isActive: values.isActive || "inactive"
       }
-      UpdateMovieFetcher('.netlify/functions/getData', movieData)
+      UpdateMovieFetcher('https://evaluacion-osp.netlify.app/.netlify/functions/getData', movieData)
       .then(()=> {
-        mutate('.netlify/functions/getData')
+        mutate('https://evaluacion-osp.netlify.app/.netlify/functions/getData')
         props.toggleFunction()
       })
     }}
