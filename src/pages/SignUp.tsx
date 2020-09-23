@@ -1,30 +1,51 @@
-import React, { FunctionComponent } from "react"
+import React, { FunctionComponent, useState } from "react"
 import {LoginProps, SignUpValues} from "../types"
 // import * as Yup from "yup"
 import {
   Formik,
   Form,
   Field,
-} from "formik";;
-
+} from "formik";
+import { toast } from 'react-toastify';
+import {useHistory} from 'react-router-dom'
 
 
 
 const SignUp:FunctionComponent<LoginProps> = ({gotrue}) => {
+  const [signUpError, setSignUpError] = useState(false)
+  const history = useHistory()
+
   const initialValues: SignUpValues = { 
     name: "",
     email: "",
     password: ""
   };
 
+
+  const notify = () => toast("Has ingresado correctamente", {
+    position: "top-center",
+    autoClose: 5000,
+    hideProgressBar: true,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: false,
+    progress: undefined,
+    });
+
+
   return (
     <div>
       <Formik
          initialValues={initialValues}
          onSubmit={(values, actions) => {
-           console.log(gotrue)
            gotrue.signup(values.email, values.password)
-           .then((res:any) => console.log(res))
+           .then((res:any) => {
+            notify()
+            history.push("/peliculas")
+           })
+           .catch(()=> {
+            setSignUpError(true)
+           })
            actions.setSubmitting(false);
          }}
        >
@@ -72,6 +93,11 @@ const SignUp:FunctionComponent<LoginProps> = ({gotrue}) => {
             >
               Registrarse
             </button>
+            {signUpError && 
+            <div className="text-red-400 my-4 text-center">
+              Hubo un error al registrar tu usuario, por favor intenta nuevamente.
+            </div>
+            }
          </Form>
        </Formik>
 

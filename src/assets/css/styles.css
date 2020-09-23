@@ -621,7 +621,24 @@ video {
 @import url("https://use.typekit.net/mvx5czn.css");
 
 .Toastify__toast--default{
+  background: #4c51bf !important;
+  background-color: #4c51bf !important;
+  border-radius: 16px !important;
+}
+
+.Toastify__toast-container--top-center{
   background-color: transparent !important;
+  border-radius: 16px !important;
+}
+
+.modalWrapper {
+  position: fixed;  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .space-y-0 > :not(template) ~ :not(template) {
@@ -17488,15 +17505,15 @@ video {
 }
 
 .stroke-0 {
-  stroke-width: 0;
+  strokeWidth: 0;
 }
 
 .stroke-1 {
-  stroke-width: 1;
+  strokeWidth: 1;
 }
 
 .stroke-2 {
-  stroke-width: 2;
+  strokeWidth: 2;
 }
 
 .table-auto {
@@ -39351,15 +39368,15 @@ video {
   }
 
   .sm\:stroke-0 {
-    stroke-width: 0;
+    strokeWidth: 0;
   }
 
   .sm\:stroke-1 {
-    stroke-width: 1;
+    strokeWidth: 1;
   }
 
   .sm\:stroke-2 {
-    stroke-width: 2;
+    strokeWidth: 2;
   }
 
   .sm\:table-auto {
@@ -61149,15 +61166,15 @@ video {
   }
 
   .md\:stroke-0 {
-    stroke-width: 0;
+    strokeWidth: 0;
   }
 
   .md\:stroke-1 {
-    stroke-width: 1;
+    strokeWidth: 1;
   }
 
   .md\:stroke-2 {
-    stroke-width: 2;
+    strokeWidth: 2;
   }
 
   .md\:table-auto {
@@ -82947,15 +82964,15 @@ video {
   }
 
   .lg\:stroke-0 {
-    stroke-width: 0;
+    strokeWidth: 0;
   }
 
   .lg\:stroke-1 {
-    stroke-width: 1;
+    strokeWidth: 1;
   }
 
   .lg\:stroke-2 {
-    stroke-width: 2;
+    strokeWidth: 2;
   }
 
   .lg\:table-auto {
@@ -104745,15 +104762,15 @@ video {
   }
 
   .xl\:stroke-0 {
-    stroke-width: 0;
+    strokeWidth: 0;
   }
 
   .xl\:stroke-1 {
-    stroke-width: 1;
+    strokeWidth: 1;
   }
 
   .xl\:stroke-2 {
-    stroke-width: 2;
+    strokeWidth: 2;
   }
 
   .xl\:table-auto {

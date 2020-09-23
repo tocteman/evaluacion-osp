@@ -38,7 +38,7 @@ const Login:FunctionComponent<LoginProps> = ({gotrue}) => {
           gotrue.login(values.email, values.password)
           .then((res:any) => {
             notify()
-            history.push("/pageContainer")
+            history.push("/peliculas")
           })
           .catch((res:any)=> {
             setLoginError(true)
@@ -80,7 +80,7 @@ const Login:FunctionComponent<LoginProps> = ({gotrue}) => {
               Ingresar
             </button>
             {loginError && 
-            <div className="text-red-400 my-4 text-center">
+            <div className="text-red-300 my-4 text-center">
               Hubo un error al ingresar, por favor intenta nuevamente.
             </div>
             }
