@@ -49,9 +49,9 @@ const AddTurnModal: FunctionComponent = (props:any) => {
         hour: values.hour,
         isActive: values.isActive
       }
-      AddNewTurnFetcher('https://evaluacion-osp.netlify.app/.netlify/functions/getData',turnData)
+      AddNewTurnFetcher('.netlify/functions/getData',turnData)
       .then(()=> {
-        mutate('https://evaluacion-osp.netlify.app/.netlify/functions/getData')
+        mutate('.netlify/functions/getData')
         props.toggleFunction()
       })
     }

@@ -28,9 +28,9 @@ const EditTurnModal: FunctionComponent<TurnEditProps> = (props:any) => {
         isActive: values.isActive
       }
       console.log(values)
-      UpdateTurnFetcher('https://evaluacion-osp.netlify.app/.netlify/functions/getData',turnData)
+      UpdateTurnFetcher('.netlify/functions/getData',turnData)
       .then(()=> {
-        mutate('https://evaluacion-osp.netlify.app/.netlify/functions/getData')
+        mutate('.netlify/functions/getData')
         props.toggleFunction()
       })
     }

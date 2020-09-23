@@ -23,7 +23,7 @@ type PageContainerProps = {
 
 const PageContainer: FunctionComponent<PageContainerProps> = ({gotrue}) => {
   const location = useLocation()
-  const {data, error} = useSWR('https://evaluacion-osp.netlify.app/.netlify/functions/getData', Fetcher)
+  const {data, error} = useSWR('.netlify/functions/getData', Fetcher)
   const history = useHistory()  
   const user = typeof window !== "undefined" && gotrue.currentUser();
   useEffect(() => {
