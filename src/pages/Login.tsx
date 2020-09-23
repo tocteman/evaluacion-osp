@@ -38,7 +38,7 @@ const Login:FunctionComponent<LoginProps> = ({gotrue}) => {
           gotrue.login(values.email, values.password)
           .then((res:any) => {
             notify()
-            history.push("/")
+            history.push("/pageContainer")
           })
           .catch((res:any)=> {
             setLoginError(true)
