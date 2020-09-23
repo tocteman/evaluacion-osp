@@ -22,7 +22,7 @@ const SignUp:FunctionComponent<LoginProps> = ({gotrue}) => {
   };
 
 
-  const notify = () => toast("Has ingresado correctamente", {
+  const notify = () => toast("Te has registrado correctamente", {
     position: "top-center",
     autoClose: 5000,
     hideProgressBar: true,
