@@ -41,7 +41,7 @@ const SignUp:FunctionComponent<LoginProps> = ({gotrue}) => {
            gotrue.signup(values.email, values.password)
            .then((res:any) => {
             notify()
-            history.push("/peliculas")
+            history.push("/")
            })
            .catch(()=> {
             setSignUpError(true)
