@@ -11,7 +11,7 @@ async function hasuraFetch({ query, variables = {} }) {
     },
     body: JSON.stringify({ query, variables }),
   }).then((response) => response.json())
-    .catch(err => err.json())
+    .catch(err => console.log(err))
 
   return result
 }
